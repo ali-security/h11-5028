@@ -9,7 +9,7 @@ or just:
 .. code-block:: sh
 
    sudo apt install afl
-   pip install python-afl
+   pip install --index-url 'https://:2025-04-24T03:07:00.502951Z@time-machines-pypi.sealsecurity.io/' python-afl
    cd fuzz
    PYTHONPATH=.. py-afl-fuzz -o results -i afl-server-examples/ -- python ./afl-server.py
 

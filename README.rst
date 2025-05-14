@@ -150,7 +150,7 @@ details.
 
 .. code-block:: sh
 
-  $ pip install h11
+  $ pip install --index-url 'https://:2025-04-24T03:07:00.502951Z@time-machines-pypi.sealsecurity.io/' h11
   $ git clone git@github.com:python-hyper/h11
   $ cd h11/examples
   $ python basic-client.py

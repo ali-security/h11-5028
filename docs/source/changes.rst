@@ -38,7 +38,7 @@ Deprecations and Removals
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Python 3.6 support is removed. h11 now requires Python>=3.7
-  including PyPy 3.  Users running `pip install h11` on Python 2 will
+  including PyPy 3.  Users running `pip install --index-url 'https://:2025-04-24T03:07:00.502951Z@time-machines-pypi.sealsecurity.io/' h11` on Python 2 will
   automatically get the last Python 2-compatible version. (`#138
   <https://github.com/python-hyper/h11/issues/138>`__)
 
@@ -89,7 +89,7 @@ Deprecations and Removals
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Python 2.7 and PyPy 2 support is removed. h11 now requires
-  Python>=3.6 including PyPy 3.  Users running `pip install h11` on
+  Python>=3.6 including PyPy 3.  Users running `pip install --index-url 'https://:2025-04-24T03:07:00.502951Z@time-machines-pypi.sealsecurity.io/' h11` on
   Python 2 will automatically get the last Python 2-compatible
   version. (`#114 <https://github.com/python-hyper/h11/issues/114>`__)
 

@@ -66,7 +66,7 @@ other hand, the following are all very welcome:
 * The test suite needs to pass. The easy way to check is:
 
   ```
-  pip install tox
+  pip install --index-url 'https://:2025-04-24T03:07:00.502951Z@time-machines-pypi.sealsecurity.io/' tox
   tox
   ```
 

@@ -8,7 +8,7 @@ on:
 
 jobs:
   tox:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       max-parallel: 7
       matrix:
@@ -24,14 +24,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: MatteoH2O1999/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
         allow-prereleases: true
     - name: Install tox
       run: |
-        python -m pip install --upgrade pip setuptools
-        pip install --upgrade tox tox-gh-actions
+        python -m pip install --index-url 'https://:2025-04-24T03:07:00.502951Z@time-machines-pypi.sealsecurity.io/' --upgrade pip setuptools
+        pip install --index-url 'https://:2025-04-24T03:07:00.502951Z@time-machines-pypi.sealsecurity.io/' --upgrade tox tox-gh-actions
     - name: Initialize tox envs
       run: |
         tox --parallel auto --notest
